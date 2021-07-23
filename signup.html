@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>signup</title>
+</head>
+
+<body>
+  <h4>haven't registered? why not signup and stay tuned</h4>
+  <form method="POST">
+    <fieldset width="20">
+      <legend>Signup</legend>
+      <p>
+      <label>FirstName
+        <input type="text" id="firstName" name="first Name" required="required" />
+      </label>
+      <br>
+      
+      <label>LastName
+        <input type="text" name="second Name" required="required" />
+      </label><br>
+      
+      <label>Phone number*
+        <input type="number" name="phone number" required="required"/>
+      </label><br>
+      
+      <label>Email
+        <input type="email" id="email" name="Email" required="required" />
+      </label><br>
+      
+      <label>Password
+        <input type="password" name="password" required="required" />
+      </label><br>
+      
+      <label>Retype Password
+        <input type="password" name="password" required="required" />
+      </label><br>
+      
+      <label>Gender
+        <select name="gender">
+          <option value="none">None</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+      <br>
+      
+      <label>
+        
+        <textarea cols="10" rows="6" placeholder="tell us about yourself"></textarea>
+        About yourself
+      </label><br>
+      
+      <label>
+        <input type="submit" name="submit" required="required" value="SignUp"/>
+      </label>
+    </p>
+    </fieldset>
+    
+  </form>
+</body>
+
+</html>
