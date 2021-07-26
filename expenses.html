@@ -17,7 +17,7 @@
   </div>
   <!-- end of link -->
   
-  <table align="left" border="1">
+  <table align="left" border="1" width="400">
     <th>Control button</th>
     <tr>
       <th>Item1 button</th>
@@ -43,49 +43,50 @@
     <tr>
       <th>item4 button</th>
       <td>
-        <input type="button" name="save4" value="save"/>
-        <input type="button" name="edit4" value="edit"/>
+        <input type="button" name="save4" value="save" onclick="save4()"/>
+        <input type="button" name="edit4" value="edit" onclick="edit4()"/>
       </td>
     </tr>
     <tr>
       <th>item5 button</th>
       <td>
-        <input type="button" name="save5" value="save"/>
-        <input type="button" name="edit5" value="edit"/>
+        <input type="button" name="save5" value="save" onclick="save5()"/>
+        <input type="button" name="edit5" value="edit" onclick="edit5()"/>
       </td>
     </tr>
     <tr>
       <th>item6 button</th>
       <td>
-        <input type="button" name="save6" value="save"/>
-        <input type="button" name="edit6" value="edit"/>
+        <input type="button" name="save6" value="save" onclick="save6()"/>
+        <input type="button" name="edit6" value="edit" onclick="edit6()"/>
       </td>
     </tr>
     <tr>
       <th>item7 button</th>
       <td>
-        <input type="button" name="save7" value="save"/>
-        <input type="button" name="edit7" value="edit"/>
+        <input type="button" name="save7" value="save" onclick="save7()"/>
+        <input type="button" name="edit7" value="edit" onclick="edit7()"/>
       </td>
     </tr>
     <tr>
       <th>item8 button</th>
       <td>
-        <input type="button" name="save8" value="save"/>
-        <input type="button" name="edit8" value="edit"/>
+        <input type="button" name="save8" value="save" onclick="save8()"/>
+        <input type="button" name="edit8" value="edit" onclick="edit8()"/>
       </td>
     </tr>
     <tr>
       <th>item9 button</th>
       <td>
-        <input type="button" name="save9" value="save"/>
-        <input type="button" name="edit9" value="edit"/>
+        <input type="button" name="save9" value="save" onclick="save9()"/>
+        <input type="button" name="edit9" value="edit" onclick="edit9()"/>
       </td>
     </tr>
   </table>
   <!-- end of button -->
   
-  <table align="center" border="1">
+  <!-- start of input table -->
+  <table align="center" border="1" width="400">
     <thead>
       <th scope="col" colspan="3">Expenses table</th>
     </thead>
@@ -132,8 +133,10 @@
     
     <tfooter>
       <th scope="row">Total:</th>
-      <td><input type="number" name="total prices" disabled /></td>
+      <td><input type="number" id="total_price"  name="total prices" disabled /></td>
+      <td><input type="button" value="calculate" onclick="total_price()" /></td>
     </tfooter>
+    
     
   </table>
 </body>
